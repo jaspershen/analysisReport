@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-<center>![](logo.png)</center>
+<center>![](MetDNA.logo.png)</center>
 
 <h2>**Analysis of report**</h2>
 <h3>Xiaotao Shen, Zhengjiang Zhu</h3>
