@@ -1,0 +1,22 @@
+Package: analysisReport
+Type: Package
+Title: analysisReport
+Version: 0.99.1
+Date: 2017-08-16
+Author: Xiaotao Shen
+Maintainer: Xiaotao Shen<shenxt@sioc.ac.cn>
+Description: analysisReport
+LazyData: true
+Depends: R (>= 3.0)
+Imports: ggplot2
+License: GPL-2 | file LICENSE
+URL: https://github.com/jaspershen/analysisReport
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown,
+    BiocStyle,
+    RUnit,
+    BiocGenerics
+VignetteBuilder: knitr
+Note:
+
