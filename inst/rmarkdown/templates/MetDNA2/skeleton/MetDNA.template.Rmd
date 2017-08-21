@@ -68,7 +68,7 @@ kable(parameter.neg, format = "markdown")
 
 ---
 
-### **(5) Dysregulated network analysis**
+### **(5) DYSREGULATED NETWORK ANALYSIS**
 
 #### Dysregulated peaks (according to pvalues) are used to identify dysregulated modules. The dysregulated modules with p values less than 0.05 are combined as dysregulated network. Metabolite set analysis (MSEA) is used to annotate functions of each module. The MSEA result for each module can be found in */POS and NEG/Dysregulated_network_analysis_result/module_information/Module_MSE analysis*.
 
