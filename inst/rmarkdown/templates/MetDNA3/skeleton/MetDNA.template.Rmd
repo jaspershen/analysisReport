@@ -67,17 +67,17 @@ kable(parameter, format = "markdown")
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, message=FALSE}
 library(knitr)
 load("module.result")
-temp.idx <- which(module.result$p.value < 0.05)
-if(length(temp.idx) == 0 & nrow(module.result) > 5){
-  temp.idx <- 1:5
-}else{
-  temp.idx <- temp.idx
-}
+# temp.idx <- which(module.result$p.value < 0.05)
+# if(length(temp.idx) == 0 & nrow(module.result) > 5){
+#   temp.idx <- 1:5
+# }else{
+#   temp.idx <- temp.idx
+# }
 
 overlap <- as.numeric(module.result$`Detected metabolite number`)*100/as.numeric(module.result$`Module size`)
 module.result$`Detected metabolite number` <- overlap
 colnames(module.result)[5] <- "Overlap (%)"
-kable(module.result[temp.idx,c(1,2,3,4,5,13)])
+kable(module.result[,c(1,2,3,4,5,13)])
 ```
 
 
