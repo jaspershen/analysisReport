@@ -58,50 +58,54 @@ kable(parameter, format = "markdown")
 
 ### **(5) DYSREGULATED NETWORK ANALYSIS**
 
+
+![**Figure 4: Summary of dysregulated network information**](pathway.overview.jpg)                                              
+
+#### **Table 2: The information of dysregualted networks.** The detailed information can be got from *dysregulated.network.MSEA.csv* in */Dysregulated_network_analysis_result_POS/pathway_information*.                 
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, message=FALSE}
+library(knitr)
+load("pathway.result")
+# temp.idx <- which(dn.result$q.value < 0.05)
+# if(length(temp.idx) == 0 & nrow(module.result) > 5){
+#   temp.idx <- 1:5
+# }else{
+#   temp.idx <- temp.idx
+# }
+
+name <- pathway.result$pathway.name
+pathway.result$Overlap <- pathway.result$Overlap*100/pathway.result$Pathway.length
+rownames(pathway.result) <- NULL
+pathway.result <-pathway.result[,c(1,2,6,7,8,9,11)]
+colnames(pathway.result) <- c("Pathway name", "Pathway ID", "Pathway size",
+                              "Overlap (%)", "P value (adjusted by P value)",
+                              "P value (adjusted by overlap)", "Detected metabolite")
+kable(pathway.result)
+```
+
+
 #### Dysregulated peaks (according to pvalues) are used to identify dysregulated modules. The dysregulated modules with p values less than 0.05 are combined as dysregulated network. Metabolite set analysis (MSEA) is used to annotate functions of each module. The MSEA result for each module can be found in */Dysregulated_network_analysis_result_POS/module_information/Module_MSE analysis*.
 
-![**Figure 4: Summary of module information**](module.overview.jpg) 
+![**Figure 5: Summary of module information**](module.overview.jpg) 
 
-#### **Table 2: The information of dysregualted modules.** The detailed information can be got from *module.result.csv* in */Dysregulated_network_analysis_result_POS/module_information*
+#### **Table 3: The information of dysregualted modules.** The detailed information can be got from *module.result.csv* in */Dysregulated_network_analysis_result_POS/module_information*
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, message=FALSE}
 library(knitr)
 load("module.result")
-temp.idx <- which(module.result$p.value < 0.05)
-if(length(temp.idx) == 0 & nrow(module.result) > 5){
-  temp.idx <- 1:5
-}else{
-  temp.idx <- temp.idx
-}
+# temp.idx <- which(module.result$p.value < 0.05)
+# if(length(temp.idx) == 0 & nrow(module.result) > 5){
+#   temp.idx <- 1:5
+# }else{
+#   temp.idx <- temp.idx
+# }
 
 overlap <- as.numeric(module.result$`Detected metabolite number`)*100/as.numeric(module.result$`Module size`)
 module.result$`Detected metabolite number` <- overlap
 colnames(module.result)[5] <- "Overlap (%)"
-kable(module.result[temp.idx,c(1,2,3,4,5,13)])
+kable(module.result[,c(1,2,3,4,5,13)])
 ```
 
 
-![**Figure 5: Summary of dysregulated network information**](pathway.overview.jpg)                                              
-
-#### **Table 3: The information of dysregualted networks.** The detailed information can be got from *dysregulated.network.MSEA.csv* in */Dysregulated_network_analysis_result_POS/pathway_information*.                 
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE, message=FALSE}
-library(knitr)
-load("dn.result")
-temp.idx <- which(dn.result$q.value < 0.05)
-if(length(temp.idx) == 0 & nrow(module.result) > 5){
-  temp.idx <- 1:5
-}else{
-  temp.idx <- temp.idx
-}
-
-name <- rownames(dn.result)
-name <- unlist(lapply(strsplit(name, split = ";"), function(x){x[1]}))
-dn.result$Overlap <- dn.result$Overlap*100/dn.result$Pathway.length
-dn.result <- data.frame(name, dn.result, stringsAsFactors = FALSE)
-rownames(dn.result) <- NULL
-colnames(dn.result) <- c("Pathway name", "p value", "p value(adjusted)", "FDR", "Pathway size", "Overlap (%)")
-kable(dn.result[temp.idx, -4])
-```
 
 
