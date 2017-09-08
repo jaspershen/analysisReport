@@ -1,8 +1,8 @@
 Package: analysisReport
 Type: Package
 Title: analysisReport
-Version: 0.99.02
-Date: 2017-08-29
+Version: 0.99.06
+Date: 2017-09-08
 Author: Xiaotao Shen
 Maintainer: Xiaotao Shen<shenxt@sioc.ac.cn>
 Description: analysisReport
