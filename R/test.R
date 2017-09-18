@@ -10,3 +10,11 @@
 test <- function(x, y){
   x + y
 }
+
+
+
+.onAttach <- function(libname, pkgname) {
+  packageStartupMessage("Welcome to my package")
+}
+
+packageStartupMessage("Welcome to my package")

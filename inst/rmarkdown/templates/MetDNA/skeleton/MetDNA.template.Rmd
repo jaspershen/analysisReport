@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### **(1) INTRODUCTION**
 
-#### MetDNA (version 0.99.06) is used for metabolite annotation and dysregulated network analysis of untargeted metabolomics.
+#### MetDNA (version 0.99.07) is used for metabolite annotation and dysregulated network analysis of untargeted metabolomics.
 
 ---
 
