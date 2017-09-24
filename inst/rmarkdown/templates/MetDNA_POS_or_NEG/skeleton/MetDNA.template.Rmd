@@ -1,0 +1,90 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<center>![](MetDNA.logo.png)</center>
+
+<h1>**Analysis report**</h1>
+<h3>Xiaotao Shen, Zhengjiang Zhu</h3>
+<h3>`r format(Sys.Date())`</h3>
+
+---
+
+### **<font color = "lightseagreen">INTRODUCTION</font>**
+
+<h4> <p style="line-height:1.5em;">**MetDNA (version 0.99.10)** is used for metabolite annotation and dysregulated network analysis of untargeted metabolomics.</p> </h4>
+
+---
+
+### **<font color = "lightseagreen">PARAMETERS</font>**
+
+#### **Table 1: The parameter setting of this analysis**
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, message=FALSE}
+library(knitr)
+load("parameter")
+kable(parameter, format = "markdown")
+```
+
+---
+
+### **<font color = "lightseagreen">SAMPLE INFORMATION</font>**
+
+<img src = "peak.distribution.plot.jpg" class = "img-topic" width = "600", align = "middle" alt = "Figure 1: Peak distribution">
+
+#### **Figure 1: Peak distribution**
+
+---
+
+### **<font color = "lightseagreen">METABOLITE ANNOTATION</font>**
+
+<h4> <p style="line-height:1.5em;">The metabolite annotation is based on metabolic reaction network. </p> </h4>
+
+<img src = "annotation.information.and.redundancy.removal.in.metABM.jpg" class = "img-topic" width = "1200", align = "middle">
+
+#### **Figure 2: Recursive annotation and redundancy removal**
+
+<h4> <p style="line-height:1.5em;">Confidence level (from grade 1 to grad 4) is assigned to each metabolie.</p> </h4>
+
+<img src = "annotation.grade.jpg" class = "img-topic" width = "1200", align = "middle">
+
+#### **Figure 3: The confidence levles of metabolites**
+
+
+---
+
+### **<font color = "lightseagreen">DYSREGULATED NETWORK ANALYSIS</font>** 
+
+<img src = "volcanoplot and pathway.overview.jpg" class = "img-topic" width = "1200", align = "middle">
+
+#### **Figure 4: Summary of dysregulated network information**
+
+#### **Table 2: The information of dysregualted pathways.** 
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, message=FALSE}
+library(knitr)
+if(any(dir() == "dn.msea")){
+load("dn.msea")  
+}
+
+msea.result <- dn.msea@msea
+pathway.name.id <- rownames(msea.result)
+pathway.name <- unlist(lapply(strsplit(pathway.name.id, split = ";"), function(x) x[1]))
+pathway.id <- unlist(lapply(strsplit(pathway.name.id, split = ";"), function(x) x[2]))
+msea.result$Overlap <- msea.result$Overlap*100/msea.result$Pathway.length
+rownames(msea.result) <- NULL
+msea.result <- msea.result[,-2]
+msea.result <- data.frame(pathway.name, pathway.id, msea.result, stringsAsFactors = FALSE)
+
+colnames(msea.result) <- c("Pathway name", "Pathway ID", "P value",
+                              "P value (FDR adjust)", "Pathway size", "Overlap (%)")
+kable(msea.result)
+```
+
