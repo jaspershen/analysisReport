@@ -88,8 +88,6 @@ kable(parameter.neg, format = "markdown")
 library(knitr)
 if(any(dir() == "dn.msea")){
 load("dn.msea")  
-}
-
 msea.result <- dn.msea@msea
 pathway.name.id <- rownames(msea.result)
 pathway.name <- unlist(lapply(strsplit(pathway.name.id, split = ";"), function(x) x[1]))
@@ -102,5 +100,6 @@ msea.result <- data.frame(pathway.name, pathway.id, msea.result, stringsAsFactor
 colnames(msea.result) <- c("Pathway name", "Pathway ID", "P value",
                               "P value (FDR adjust)", "Pathway size", "Overlap (%)")
 kable(msea.result)
+}
 ```
 
