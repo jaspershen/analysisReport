@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### **<font color = "lightseagreen">INTRODUCTION</font>**
 
-<h4> <p style="line-height:1.5em;">**MetDNA (version 0.99.10)** is used for metabolite annotation and dysregulated network analysis of untargeted metabolomics.</p> </h4>
+<h4> <p style="line-height:1.5em;">**MetDNA (version 0.99.11)** is used for metabolite annotation and dysregulated network analysis of untargeted metabolomics.</p> </h4>
 
 ---
 
