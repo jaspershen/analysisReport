@@ -14,7 +14,7 @@ test <- function(x, y){
 
 
 .onAttach <- function(libname, pkgname) {
-  packageStartupMessage("Welcome to my package")
+  packageStartupMessage("analysisReport version0.99.12")
 }
 
-packageStartupMessage("Welcome to my package")
+packageStartupMessage("analysisReport version0.99.12")
