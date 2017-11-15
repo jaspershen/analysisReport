@@ -17,4 +17,4 @@ test <- function(x, y){
   packageStartupMessage("analysisReport version0.99.12")
 }
 
-packageStartupMessage("analysisReport version0.99.12")
+packageStartupMessage("analysisReport version0.99.12\nwhich is used for MetDNA0.99.12")
