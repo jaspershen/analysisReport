@@ -14,7 +14,17 @@ test <- function(x, y){
 
 
 .onAttach <- function(libname, pkgname) {
-  packageStartupMessage("analysisReport version0.99.12")
+packageStartupMessage("analysisReport version 0.99.12,
+which is used for MetDNA 0.99.12.
+Author: Jasper Shen.
+Maintainer: Jasper Shen (shenxt1990@163.com).
+News:
+o Change the logo.")
 }
 
-packageStartupMessage("analysisReport version 0.99.12\nwhich is used for MetDNA 0.99.12")
+packageStartupMessage("analysisReport version 0.99.12,
+which is used for MetDNA 0.99.12.
+Author: Jasper Shen.
+Maintainer: Jasper Shen (shenxt1990@163.com).
+News:
+o Change the logo.")
