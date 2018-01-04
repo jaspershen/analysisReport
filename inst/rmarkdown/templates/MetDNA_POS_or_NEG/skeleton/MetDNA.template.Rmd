@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 <center>![](MetDNA.logo.png)</center>
 
 <h1>**Analysis report**</h1>
-<h3>Laboratory for Mass Spectrometry and Metabolomics (ZHU LAB[http://www.zhulab.cn/])</h3>
+<h3>Laboratory for Mass Spectrometry and Metabolomics ([ZHU LAB](http://www.zhulab.cn/)</h3>
 <h3>`r format(Sys.Date())`</h3>
 
 ---
@@ -70,8 +70,8 @@ kable(parameter, format = "markdown")
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, message=FALSE}
 library(knitr)
-if(any(dir() == "dn.msea")){
-load("dn.msea")  
+if(any(dir() == "msea")){
+load("msea")  
 
 msea.result <- dn.msea@msea
 pathway.name.id <- rownames(msea.result)
