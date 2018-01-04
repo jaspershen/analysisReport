@@ -12,20 +12,20 @@ knitr::opts_chunk$set(echo = TRUE)
 <center>![](MetDNA.logo.png)</center>
 
 <h1>**Analysis report**</h1>
-<h3>Xiaotao Shen, Zhengjiang Zhu</h3>
+<h3>Laboratory for Mass Spectrometry and Metabolomics (ZHU LAB[http://www.zhulab.cn/])</h3>
 <h3>`r format(Sys.Date())`</h3>
 
 ---
 
 ### **<font color = "lightseagreen">INTRODUCTION</font>**
 
-<h4> <p style="line-height:1.5em;">**MetDNA (version 0.99.13)** is used for metabolite annotation and dysregulated network analysis of untargeted metabolomics.</p> </h4>
+<h4> <p style="line-height:1.5em;">**MetDNA (version 0.99.13)** is used for metabolite identification and dysregulated pathway analysis of untargeted metabolomics.</p> </h4>
 
 ---
 
 ### **<font color = "lightseagreen">PARAMETERS</font>**
 
-#### **Table 1: The parameter setting of this analysis**
+#### **Table 1: Parameter setting**
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, message=FALSE}
 library(knitr)
