@@ -80,7 +80,7 @@ kable(parameter, format = "markdown")
 library(knitr)
 if(any(dir() == "msea")){
 load("msea")  
-msea.result <- dn.msea@msea
+msea.result <- msea@msea
 pathway.name.id <- rownames(msea.result)
 pathway.name <- unlist(lapply(strsplit(pathway.name.id, split = ";"), function(x) x[1]))
 pathway.id <- unlist(lapply(strsplit(pathway.name.id, split = ";"), function(x) x[2]))
