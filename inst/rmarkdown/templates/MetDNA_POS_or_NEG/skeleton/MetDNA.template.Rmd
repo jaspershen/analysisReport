@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 <center>![](MetDNA.logo.png)</center>
 
 <h1>**Analysis report**</h1>
-<h3>Laboratory for Mass Spectrometry and Metabolomics ([ZHU LAB](http://www.zhulab.cn/)</h3>
+<h3>Laboratory for Mass Spectrometry and Metabolomics ([ZHU LAB](http://www.zhulab.cn/))</h3>
 <h3>`r format(Sys.Date())`</h3>
 
 ---
@@ -60,7 +60,7 @@ kable(parameter, format = "markdown")
 
 ---
 
-### **<font color = "lightseagreen">DYSREGULATED NETWORK ANALYSIS</font>** 
+### **<font color = "lightseagreen">DYSREGULATED PATHWAY ANALYSIS</font>** 
 
 <img src = "volcanoplot and pathway.overview.jpg" class = "img-topic" width = "1200", align = "middle">
 
