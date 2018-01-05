@@ -97,9 +97,9 @@ msea.result <- data.frame(pathway.name, pathway.id, msea.result, stringsAsFactor
 colnames(msea.result) <- c("Pathway name", "Pathway ID", "P value",
                               "P value (FDR adjust)", "Pathway size", "Overlap (%)")
 
-temp.idx <- which(mse.result[,3] < 0.05)
+temp.idx <- which(msea.result[,3] < 0.05)
 if(length(temp.idx) > 0){
-  mse.result <- mse.result[temp.idx,]
+  msea.result <- msea.result[temp.idx,]
 }
 kable(msea.result)
 }
