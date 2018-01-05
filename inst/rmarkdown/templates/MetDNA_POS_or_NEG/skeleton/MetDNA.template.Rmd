@@ -76,6 +76,7 @@ load("msea")
 msea.result <- msea@msea
 pathway.name.id <- rownames(msea.result)
 pathway.name <- unlist(lapply(strsplit(pathway.name.id, split = ";"), function(x) x[1]))
+pathway.id <- unlist(lapply(strsplit(pathway.name.id, split = ";"), function(x) x[2]))
 pathway.id <- paste("[", pathway.id, "]", "(http://www.kegg.jp/kegg-bin/show_pathway?", pathway.id, ")", sep = "")
 msea.result$Overlap <- msea.result$Overlap*100/msea.result$Pathway.length
 rownames(msea.result) <- NULL
