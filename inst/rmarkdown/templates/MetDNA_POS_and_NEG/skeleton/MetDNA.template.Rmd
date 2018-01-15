@@ -38,7 +38,6 @@ kable(parameter, format = "markdown")
 
 ### **<font color = "lightseagreen">SAMPLE INFORMATION</font>**
 
-<img src = "peak.distribution.plot.png" class = "img-topic" width = "1200", align = "middle" alt = "Figure 1: Peak distribution">
 
 <center>![](peak.distribution.plot.png)</center>
 
@@ -49,26 +48,22 @@ kable(parameter, format = "markdown")
 ### **<font color = "lightseagreen">METABOLITE IDENTIFICATION</font>**
 
 
-<img src = "annotation.information.and.redundancy.removal.in.metABM.POS.png" class = "img-topic" width = "1200", align = "middle">
 
 <center>![](annotation.information.and.redundancy.removal.in.metABM.POS.png)</center>
 
 #### **Figure 2: The number of identified metabolites and cumulative identified metabolites (left panel) and peak and metabolite redundancy (right panel). (Positive mode)**
 
-<img src = "annotation.information.and.redundancy.removal.in.metABM.NEG.png" class = "img-topic" width = "1200", align = "middle">
 
 <center>![](annotation.information.and.redundancy.removal.in.metABM.NEG.png)</center>
 
 #### **Figure 3: The number of identified metabolites and cumulative identified metabolites (left panel) and peak and metabolite redundancy (right panel). (Negative mode)**
 
 
-<img src = "annotation.grade.POS.png" class = "img-topic" width = "1200", align = "middle">
 
 #### **Figure 4: The confidence levles of identified metabolites. (Positive mode)**
 
 <center>![](annotation.grade.POS.png)</center>
 
-<img src = "annotation.grade.NEG.png" class = "img-topic" width = "1200", align = "middle">
 
 <center>![](annotation.grade.NEG.png)</center>
 
@@ -79,7 +74,6 @@ kable(parameter, format = "markdown")
 
 ### **<font color = "lightseagreen">PATHWAY ENRICHMENT ANALYSIS</font>** 
 
-<img src = "volcanoplot and pathway.overview.png" class = "img-topic" width = "1200", align = "middle">
 
 <center>![](volcanoplot and pathway.overview.png)</center>
 
