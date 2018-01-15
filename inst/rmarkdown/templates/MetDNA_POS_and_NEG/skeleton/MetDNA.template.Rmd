@@ -40,11 +40,11 @@ kable(parameter, format = "markdown")
 
 <img src = "peak.distribution.plot.png" class = "img-topic" width = "1200", align = "middle" alt = "Figure 1: Peak distribution">
 
-#### **Figure 1: Peak distribution**
+#### **Figure 1: Peak intensity profile for positive mode (left panel) and negative mode (right panel).**
 
 ---
 
-### **<font color = "lightseagreen">METABOLITE Identification</font>**
+### **<font color = "lightseagreen">METABOLITE IDENTIFICATION</font>**
 
 
 <img src = "annotation.information.and.redundancy.removal.in.metABM.POS.png" class = "img-topic" width = "1200", align = "middle">
@@ -71,7 +71,7 @@ kable(parameter, format = "markdown")
 
 <img src = "volcanoplot and pathway.overview.png" class = "img-topic" width = "1200", align = "middle">
 
-#### **Figure 6: Volcano plot (left panel) and summary of dysregulated pathways.**
+#### **Figure 6: Volcano plot (left panel) and summary of dysregulated pathways (right panel).**
 
 #### **Table 2: The detailed information of dysregualted pathways.** 
 

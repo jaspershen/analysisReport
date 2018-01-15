@@ -44,9 +44,8 @@ kable(parameter, format = "markdown")
 
 ---
 
-### **<font color = "lightseagreen">METABOLITE Identification</font>**
+### **<font color = "lightseagreen">METABOLITE IDENTIFICATION</font>**
 
-<h4> <p style="line-height:1.5em;">The metabolite identification is based on metabolic reaction network. </p> </h4>
 
 <img src = "annotation.information.and.redundancy.removal.in.metABM.png" class = "img-topic" width = "1200", align = "middle">
 
@@ -64,7 +63,7 @@ kable(parameter, format = "markdown")
 
 <img src = "volcanoplot and pathway.overview.png" class = "img-topic" width = "1200", align = "middle">
 
-#### **Figure 4: Volcano plot (left panel) and summary of dysregulated pathways.**
+#### **Figure 4: Volcano plot (left panel) and summary of dysregulated pathways (right panel).**
 
 #### **Table 2: The detailed information of dysregualted pathways.** 
 
