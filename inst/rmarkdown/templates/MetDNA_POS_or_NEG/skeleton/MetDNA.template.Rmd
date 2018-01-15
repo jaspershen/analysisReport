@@ -41,7 +41,7 @@ kable(parameter, format = "markdown")
 
 ![](peak.distribution.plot.png)
 
-#### **Figure 1: Peak distribution**
+#### **Figure 1: Peak intensity profile**
 
 ---
 
