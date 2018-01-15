@@ -13,13 +13,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <h1>**Analysis report**</h1>
 <h3>Laboratory for Mass Spectrometry and Metabolomics ([ZHU LAB](http://www.zhulab.cn/))</h3>
+<h3>IRCBC, Chinese Academy of Sciences, Shanghai, China.</h3>
 <h3>`r format(Sys.Date())`</h3>
 
 ---
 
 ### **<font color = "lightseagreen">INTRODUCTION</font>**
 
-<h4> <p style="line-height:1.5em;">**MetDNA (version 0.99.14)**: Created in 2018 by Xiaotao Shen, Xin Xiong and Ruohong Wang from Dr. Zheng-Jiang Zhu lab, Chinese Academy of Sciences.</p> </h4>
+<h4> <p style="line-height:1.5em;">**MetDNA (version 0.99.15)**: Created in 2018 by Xiaotao Shen, Xin Xiong and Ruohong Wang from Dr. Zheng-Jiang Zhu lab, Chinese Academy of Sciences.</p> </h4>
 
 ---
 
@@ -37,36 +38,35 @@ kable(parameter, format = "markdown")
 
 ### **<font color = "lightseagreen">SAMPLE INFORMATION</font>**
 
-<img src = "peak.distribution.plot.jpg" class = "img-topic" width = "600", align = "middle" alt = "Figure 1: Peak distribution">
+<img src = "peak.distribution.plot.png" class = "img-topic" width = "600", align = "middle" alt = "Figure 1: Peak distribution">
 
 #### **Figure 1: Peak distribution**
 
 ---
 
-### **<font color = "lightseagreen">METABOLITE ANNOTATION</font>**
+### **<font color = "lightseagreen">METABOLITE Identification</font>**
 
-<h4> <p style="line-height:1.5em;">The metabolite annotation is based on metabolic reaction network. </p> </h4>
+<h4> <p style="line-height:1.5em;">The metabolite identification is based on metabolic reaction network. </p> </h4>
 
-<img src = "annotation.information.and.redundancy.removal.in.metABM.jpg" class = "img-topic" width = "1200", align = "middle">
+<img src = "annotation.information.and.redundancy.removal.in.metABM.png" class = "img-topic" width = "1200", align = "middle">
 
-#### **Figure 2: Recursive annotation and redundancy removal**
+#### **Figure 2: The number of identified metabolites and cumulative identified metabolites (left panel) and peak and metabolite redundancy (right panel).**
 
-<h4> <p style="line-height:1.5em;">Confidence level (from grade 1 to grad 4) is assigned to each metabolie.</p> </h4>
 
-<img src = "annotation.grade.jpg" class = "img-topic" width = "1200", align = "middle">
+<img src = "annotation.grade.png" class = "img-topic" width = "1200", align = "middle">
 
-#### **Figure 3: The confidence levles of metabolites**
+#### **Figure 3: The confidence levles of identified metabolites.**
 
 
 ---
 
-### **<font color = "lightseagreen">DYSREGULATED PATHWAY ANALYSIS</font>** 
+### **<font color = "lightseagreen">PATHWAY ENRICHMENT ANALYSIS</font>** 
 
-<img src = "volcanoplot and pathway.overview.jpg" class = "img-topic" width = "1200", align = "middle">
+<img src = "volcanoplot and pathway.overview.png" class = "img-topic" width = "1200", align = "middle">
 
-#### **Figure 4: Summary of dysregulated network information**
+#### **Figure 4: Volcano plot (left panel) and summary of dysregulated pathways.**
 
-#### **Table 2: The information of dysregualted pathways.** 
+#### **Table 2: The detailed information of dysregualted pathways.** 
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, message=FALSE}
 library(knitr)
