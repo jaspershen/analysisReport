@@ -50,7 +50,7 @@ kable(parameter, format = "markdown")
 
 ![](annotation.information.and.redundancy.removal.in.metABM.png)
 
-#### **Figure 2: The number of identified metabolites and cumulative identified metabolites (left panel) and peak and metabolite redundancy (right panel).**
+#### **Figure 2: The number of identified metabolites (left panel) and peak and metabolite redundancy (right panel).**
 
 
 ![](annotation.grade.png)
@@ -65,7 +65,7 @@ kable(parameter, format = "markdown")
 
 ![](volcanoplot and pathway.overview.png)
 
-#### **Figure 4: Volcano plot (left panel) and summary of dysregulated pathways (right panel).**
+#### **Figure 4: Volcano plot (left panel) and summary of enriched pathways (right panel).**
 
 #### **Table 2: The detailed information of dysregualted pathways.** 
 
