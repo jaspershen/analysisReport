@@ -40,6 +40,8 @@ kable(parameter, format = "markdown")
 
 <img src = "peak.distribution.plot.png" class = "img-topic" width = "600", align = "middle" alt = "Figure 1: Peak distribution">
 
+<center>![](peak.distribution.plot.png)</center>
+
 #### **Figure 1: Peak distribution**
 
 ---
