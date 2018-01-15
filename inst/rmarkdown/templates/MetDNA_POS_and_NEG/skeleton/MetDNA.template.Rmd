@@ -40,6 +40,8 @@ kable(parameter, format = "markdown")
 
 <img src = "peak.distribution.plot.png" class = "img-topic" width = "1200", align = "middle" alt = "Figure 1: Peak distribution">
 
+<center>![](peak.distribution.plot.png)</center>
+
 #### **Figure 1: Peak intensity profile for positive mode (left panel) and negative mode (right panel).**
 
 ---
@@ -49,9 +51,13 @@ kable(parameter, format = "markdown")
 
 <img src = "annotation.information.and.redundancy.removal.in.metABM.POS.png" class = "img-topic" width = "1200", align = "middle">
 
+<center>![](annotation.information.and.redundancy.removal.in.metABM.POS.png)</center>
+
 #### **Figure 2: The number of identified metabolites and cumulative identified metabolites (left panel) and peak and metabolite redundancy (right panel). (Positive mode)**
 
 <img src = "annotation.information.and.redundancy.removal.in.metABM.NEG.png" class = "img-topic" width = "1200", align = "middle">
+
+<center>![](annotation.information.and.redundancy.removal.in.metABM.NEG.png)</center>
 
 #### **Figure 3: The number of identified metabolites and cumulative identified metabolites (left panel) and peak and metabolite redundancy (right panel). (Negative mode)**
 
@@ -60,7 +66,11 @@ kable(parameter, format = "markdown")
 
 #### **Figure 4: The confidence levles of identified metabolites. (Positive mode)**
 
+<center>![](annotation.grade.POS.png)</center>
+
 <img src = "annotation.grade.NEG.png" class = "img-topic" width = "1200", align = "middle">
+
+<center>![](annotation.grade.NEG.png)</center>
 
 #### **Figure 5: The confidence levles of identified metabolites. (Negative mode)**
 
@@ -71,7 +81,10 @@ kable(parameter, format = "markdown")
 
 <img src = "volcanoplot and pathway.overview.png" class = "img-topic" width = "1200", align = "middle">
 
+<center>![](volcanoplot and pathway.overview.png)</center>
+
 #### **Figure 6: Volcano plot (left panel) and summary of dysregulated pathways (right panel).**
+
 
 #### **Table 2: The detailed information of dysregualted pathways.** 
 

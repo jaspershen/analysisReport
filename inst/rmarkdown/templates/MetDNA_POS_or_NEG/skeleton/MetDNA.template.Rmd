@@ -40,7 +40,7 @@ kable(parameter, format = "markdown")
 
 <img src = "peak.distribution.plot.png" class = "img-topic" width = "600", align = "middle" alt = "Figure 1: Peak distribution">
 
-![](peak.distribution.plot.png){:width="600px"}
+![](peak.distribution.plot.png)
 
 #### **Figure 1: Peak distribution**
 
@@ -51,10 +51,14 @@ kable(parameter, format = "markdown")
 
 <img src = "annotation.information.and.redundancy.removal.in.metABM.png" class = "img-topic" width = "1200", align = "middle">
 
+![](annotation.information.and.redundancy.removal.in.metABM.png)
+
 #### **Figure 2: The number of identified metabolites and cumulative identified metabolites (left panel) and peak and metabolite redundancy (right panel).**
 
 
 <img src = "annotation.grade.png" class = "img-topic" width = "1200", align = "middle">
+
+![](annotation.grade.png)
 
 #### **Figure 3: The confidence levles of identified metabolites.**
 
@@ -64,6 +68,8 @@ kable(parameter, format = "markdown")
 ### **<font color = "lightseagreen">PATHWAY ENRICHMENT ANALYSIS</font>** 
 
 <img src = "volcanoplot and pathway.overview.png" class = "img-topic" width = "1200", align = "middle">
+
+![](volcanoplot and pathway.overview.png)
 
 #### **Figure 4: Volcano plot (left panel) and summary of dysregulated pathways (right panel).**
 
