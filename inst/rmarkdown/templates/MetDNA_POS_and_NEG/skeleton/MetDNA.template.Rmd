@@ -74,7 +74,7 @@ kable(parameter, format = "markdown")
 ### **<font color = "lightseagreen">PATHWAY ENRICHMENT ANALYSIS</font>** 
 
 
-<center>![](volcanoplot and pathway.overview.png)</center>
+<center>![](volcanoplot.and.pathway.overview.png)</center>
 
 #### **Figure 6: Volcano plot (left panel) and summary of enriched pathways (right panel).**
 
