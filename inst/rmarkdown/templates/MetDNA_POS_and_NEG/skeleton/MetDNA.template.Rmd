@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### **<font color = "lightseagreen">INTRODUCTION</font>**
 
-<h4> <p style="line-height:1.5em;">**MetDNA (version 1.0.1)**: Created in 2018 by Xiaotao Shen, Xin Xiong and Ruohong Wang from Dr. Zheng-Jiang Zhu lab, Chinese Academy of Sciences.</p> </h4>
+<h4> <p style="line-height:1.5em;">**MetDNA (version 1.0.3)**: Created in 2018 by Xiaotao Shen, Xin Xiong and Ruohong Wang from Dr. Zheng-Jiang Zhu lab, Chinese Academy of Sciences.</p> </h4>
 
 ---
 
